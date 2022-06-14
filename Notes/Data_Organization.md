@@ -4,10 +4,10 @@ Peter Fiorica
 10 June 2022
 ---
 
-#Introduction
+# Introduction
 This document serves as notes to help explain to organization of RRBS files on CCR.
 
-#Working Directory:
+# Working Directory:
 `pwd`
 ```
 /projects/rpci/joyceohm/RQ020887/RQ020887-Ohm_RRBS/output/bismark
