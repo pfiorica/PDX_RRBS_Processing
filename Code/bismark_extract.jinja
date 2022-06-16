@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --partition=general-compute --qos=general-compute
+#SBATCH --time={{job_walltime}}
+#SBATCH --job-name={{job_name}}
+#SBATCH --nodes={{ n_cpu }}
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem={{job_memory}}
+##SBATCH --requeue
+
+#SBATCH --output={{logs_folder}}/{% raw %}%x.%j.out{% endraw %}
+#SBATCH --error={{logs_folder}}/{% raw %}%x.%j.err{% endraw %}
+
+module load gcc
+module load samtools
+conda init bash
+conda activate bismark
+
+{% raw %}cd $PBS_O_WORKDIR {% endraw %}
+
+{{ command }} \
+{{ samfile }} \
+{{ output }}

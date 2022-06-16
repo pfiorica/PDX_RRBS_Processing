@@ -1,0 +1,57 @@
+---
+definitions:
+
+  # command and template must always be specified.
+  command: "bismark_methylation_extractor"
+  template: bismark_extract.jinja
+
+  copy_to_item: true
+
+  default_arguments:
+    job_memory: "8000"
+    job_walltime: "12:00:00"
+    logs_folder: logs_bismark
+    n_cpu: "1"
+
+  # This specifies what the script does once an individual file is generated.
+  submission:
+    !SLURMQueue
+      jobs_folder: methyl_extract_jobs
+      job_name_key: job_name # Jobs will be written to job_name.sh files with the generated job_name argument filled in.
+      fake_submission: false # Specifying this just writes the files and does not run a submission command.
+
+  constants:
+    sam_dir: &SAM_DIR /projects/rpci/joyceohm/pnfioric/RRBS_samfile_links/
+    sam_file_pattern: &SAM_FILE_PATTERN "/projects/rpci/joyceohm/pnfioric/RRBS_samfile_links/{sample}_001_val_1.fq_trimmed_bismark_bt2_pe.sam"
+    results_folder: &RESULTS_FOLDER /panasas/scratch/grp-joyceohm/rrbs_methyl_extract/
+  
+  pre_command:
+  - '[ -d /panasas/scratch/grp-joyceohm/rrbs_methyl_extract ] || mkdir -p /panasas/scratch/grp-joyceohm/rrbs_methyl_extract'
+
+# There are a lot of different types of arguments, and only a few are shown here.
+arguments:
+
+  - !FilesInFolder
+    name: sample
+    sort: false
+    folder: *SAM_DIR
+    regexp_filter: "(.*)_001_val_1.fq_trimmed_bismark_bt2_pe.sam"
+    metadata_rules: [ !ExtractFromFileNameRegexpMetadata { path: sample} ] 
+
+  - !ArgumentFromMetadata
+    name: samfile
+    prefix: "--bedGraph"
+    format_rule: *SAM_FILE_PATTERN
+    sources: [ { path: "sample" , destination: sample } ]
+
+  - !ArgumentFromMetadata
+    name: output
+    prepend: *RESULTS_FOLDER
+    prefix: "-o"
+    format_rule: "methyl_extract_{sample}"
+    sources: [ { path: sample, destination: sample } ]
+
+  - !ArgumentFromMetadata
+    name: job_name
+    format_rule: "{sample}_methyl_extract"
+    sources: [ { path: sample, destination: sample } ]

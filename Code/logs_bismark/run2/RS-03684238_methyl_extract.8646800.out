@@ -1,0 +1,15 @@
+no change     /util/common/python/py38/anaconda-2021.05/condabin/conda
+no change     /util/common/python/py38/anaconda-2021.05/bin/conda
+no change     /util/common/python/py38/anaconda-2021.05/bin/conda-env
+no change     /util/common/python/py38/anaconda-2021.05/bin/activate
+no change     /util/common/python/py38/anaconda-2021.05/bin/deactivate
+no change     /util/common/python/py38/anaconda-2021.05/etc/profile.d/conda.sh
+no change     /util/common/python/py38/anaconda-2021.05/etc/fish/conf.d/conda.fish
+no change     /util/common/python/py38/anaconda-2021.05/shell/condabin/Conda.psm1
+no change     /util/common/python/py38/anaconda-2021.05/shell/condabin/conda-hook.ps1
+no change     /util/common/python/py38/anaconda-2021.05/lib/python3.8/site-packages/xontrib/conda.xsh
+no change     /util/common/python/py38/anaconda-2021.05/etc/profile.d/conda.csh
+no change     /user/pnfioric/.bashrc
+No action taken.
+
+Now testing Bismark result file >/projects/rpci/joyceohm/pnfioric/RRBS_samfile_links/RS-03684238_001_val_1.fq_trimmed_bismark_bt2_pe.sam< for positional sorting (which would be bad...)	

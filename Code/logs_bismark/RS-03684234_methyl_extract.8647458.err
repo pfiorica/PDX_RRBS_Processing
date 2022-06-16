@@ -1,0 +1,751 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+
+ *** Bismark methylation extractor version v0.23.1 ***
+
+Output directory /panasas/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/ doesn't exist, creating it for you...
+
+Output will be written into the directory: /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/
+Trying to determine the type of mapping from the SAM header line of file /projects/rpci/joyceohm/pnfioric/RRBS_samfile_links/RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.sam
+
+gzip: /projects/rpci/joyceohm/pnfioric/RRBS_samfile_links/RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.sam: not in gzip format
+Treating file(s) as paired-end data (as extracted from @PG line)
+
+Setting option '--no_overlap' since this is (normally) the right thing to do for paired-end data
+
+Setting core usage to single-threaded (default). Consider using --multicore <int> to speed up the extraction process.
+
+Summarising Bismark methylation extractor parameters:
+===============================================================
+Bismark paired-end SAM format specified (default)
+Number of cores to be used: 1
+Output path specified as: /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/
+
+
+Summarising bedGraph parameters:
+===============================================================
+Generating additional output in bedGraph and coverage format
+bedGraph format:	<Chromosome> <Start Position> <End Position> <Methylation Percentage>
+coverage format:	<Chromosome> <Start Position> <End Position> <Methylation Percentage> <count methylated> <count non-methylated>
+
+Using a cutoff of 1 read(s) to report cytosine positions
+Reporting and sorting cytosine methylation information in CpG context only (default)
+The bedGraph UNIX sort command will use the following memory setting:	'2G'. Temporary directory used for sorting is the output directory
+
+
+gzip: /projects/rpci/joyceohm/pnfioric/RRBS_samfile_links/RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.sam: not in gzip format
+...passed!
+Writing result file containing methylation information for C in CpG context from the original top strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CpG context from the complementary to original top strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_CTOT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CpG context from the complementary to original bottom strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_CTOB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CpG context from the original bottom strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+
+Writing result file containing methylation information for C in CHG context from the original top strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHG context from the complementary to original top strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_CTOT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHG context from the complementary to original bottom strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_CTOB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHG context from the original bottom strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+
+Writing result file containing methylation information for C in CHH context from the original top strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHH context from the complementary to original top strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_CTOT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHH context from the complementary to original bottom strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_CTOB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHH context from the original bottom strand to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+
+Now reading in Bismark result file /projects/rpci/joyceohm/pnfioric/RRBS_samfile_links/RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.sam
+
+gzip: /projects/rpci/joyceohm/pnfioric/RRBS_samfile_links/RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.sam: not in gzip format
+skipping SAM header line:	@HD	VN:1.0	SO:unsorted
+skipping SAM header line:	@SQ	SN:chr1	LN:248956422
+skipping SAM header line:	@SQ	SN:chr2	LN:242193529
+skipping SAM header line:	@SQ	SN:chr3	LN:198295559
+skipping SAM header line:	@SQ	SN:chr4	LN:190214555
+skipping SAM header line:	@SQ	SN:chr5	LN:181538259
+skipping SAM header line:	@SQ	SN:chr6	LN:170805979
+skipping SAM header line:	@SQ	SN:chr7	LN:159345973
+skipping SAM header line:	@SQ	SN:chr8	LN:145138636
+skipping SAM header line:	@SQ	SN:chr9	LN:138394717
+skipping SAM header line:	@SQ	SN:chr10	LN:133797422
+skipping SAM header line:	@SQ	SN:chr11	LN:135086622
+skipping SAM header line:	@SQ	SN:chr12	LN:133275309
+skipping SAM header line:	@SQ	SN:chr13	LN:114364328
+skipping SAM header line:	@SQ	SN:chr14	LN:107043718
+skipping SAM header line:	@SQ	SN:chr15	LN:101991189
+skipping SAM header line:	@SQ	SN:chr16	LN:90338345
+skipping SAM header line:	@SQ	SN:chr17	LN:83257441
+skipping SAM header line:	@SQ	SN:chr18	LN:80373285
+skipping SAM header line:	@SQ	SN:chr19	LN:58617616
+skipping SAM header line:	@SQ	SN:chr20	LN:64444167
+skipping SAM header line:	@SQ	SN:chr21	LN:46709983
+skipping SAM header line:	@SQ	SN:chr22	LN:50818468
+skipping SAM header line:	@SQ	SN:chrX	LN:156040895
+skipping SAM header line:	@SQ	SN:chrY	LN:57227415
+skipping SAM header line:	@SQ	SN:chrM	LN:16569
+skipping SAM header line:	@SQ	SN:GL000008.2	LN:209709
+skipping SAM header line:	@SQ	SN:GL000009.2	LN:201709
+skipping SAM header line:	@SQ	SN:GL000194.1	LN:191469
+skipping SAM header line:	@SQ	SN:GL000195.1	LN:182896
+skipping SAM header line:	@SQ	SN:GL000205.2	LN:185591
+skipping SAM header line:	@SQ	SN:GL000208.1	LN:92689
+skipping SAM header line:	@SQ	SN:GL000213.1	LN:164239
+skipping SAM header line:	@SQ	SN:GL000214.1	LN:137718
+skipping SAM header line:	@SQ	SN:GL000216.2	LN:176608
+skipping SAM header line:	@SQ	SN:GL000218.1	LN:161147
+skipping SAM header line:	@SQ	SN:GL000219.1	LN:179198
+skipping SAM header line:	@SQ	SN:GL000220.1	LN:161802
+skipping SAM header line:	@SQ	SN:GL000221.1	LN:155397
+skipping SAM header line:	@SQ	SN:GL000224.1	LN:179693
+skipping SAM header line:	@SQ	SN:GL000225.1	LN:211173
+skipping SAM header line:	@SQ	SN:GL000226.1	LN:15008
+skipping SAM header line:	@SQ	SN:KI270302.1	LN:2274
+skipping SAM header line:	@SQ	SN:KI270303.1	LN:1942
+skipping SAM header line:	@SQ	SN:KI270304.1	LN:2165
+skipping SAM header line:	@SQ	SN:KI270305.1	LN:1472
+skipping SAM header line:	@SQ	SN:KI270310.1	LN:1201
+skipping SAM header line:	@SQ	SN:KI270311.1	LN:12399
+skipping SAM header line:	@SQ	SN:KI270312.1	LN:998
+skipping SAM header line:	@SQ	SN:KI270315.1	LN:2276
+skipping SAM header line:	@SQ	SN:KI270316.1	LN:1444
+skipping SAM header line:	@SQ	SN:KI270317.1	LN:37690
+skipping SAM header line:	@SQ	SN:KI270320.1	LN:4416
+skipping SAM header line:	@SQ	SN:KI270322.1	LN:21476
+skipping SAM header line:	@SQ	SN:KI270329.1	LN:1040
+skipping SAM header line:	@SQ	SN:KI270330.1	LN:1652
+skipping SAM header line:	@SQ	SN:KI270333.1	LN:2699
+skipping SAM header line:	@SQ	SN:KI270334.1	LN:1368
+skipping SAM header line:	@SQ	SN:KI270335.1	LN:1048
+skipping SAM header line:	@SQ	SN:KI270336.1	LN:1026
+skipping SAM header line:	@SQ	SN:KI270337.1	LN:1121
+skipping SAM header line:	@SQ	SN:KI270338.1	LN:1428
+skipping SAM header line:	@SQ	SN:KI270340.1	LN:1428
+skipping SAM header line:	@SQ	SN:KI270362.1	LN:3530
+skipping SAM header line:	@SQ	SN:KI270363.1	LN:1803
+skipping SAM header line:	@SQ	SN:KI270364.1	LN:2855
+skipping SAM header line:	@SQ	SN:KI270366.1	LN:8320
+skipping SAM header line:	@SQ	SN:KI270371.1	LN:2805
+skipping SAM header line:	@SQ	SN:KI270372.1	LN:1650
+skipping SAM header line:	@SQ	SN:KI270373.1	LN:1451
+skipping SAM header line:	@SQ	SN:KI270374.1	LN:2656
+skipping SAM header line:	@SQ	SN:KI270375.1	LN:2378
+skipping SAM header line:	@SQ	SN:KI270376.1	LN:1136
+skipping SAM header line:	@SQ	SN:KI270378.1	LN:1048
+skipping SAM header line:	@SQ	SN:KI270379.1	LN:1045
+skipping SAM header line:	@SQ	SN:KI270381.1	LN:1930
+skipping SAM header line:	@SQ	SN:KI270382.1	LN:4215
+skipping SAM header line:	@SQ	SN:KI270383.1	LN:1750
+skipping SAM header line:	@SQ	SN:KI270384.1	LN:1658
+skipping SAM header line:	@SQ	SN:KI270385.1	LN:990
+skipping SAM header line:	@SQ	SN:KI270386.1	LN:1788
+skipping SAM header line:	@SQ	SN:KI270387.1	LN:1537
+skipping SAM header line:	@SQ	SN:KI270388.1	LN:1216
+skipping SAM header line:	@SQ	SN:KI270389.1	LN:1298
+skipping SAM header line:	@SQ	SN:KI270390.1	LN:2387
+skipping SAM header line:	@SQ	SN:KI270391.1	LN:1484
+skipping SAM header line:	@SQ	SN:KI270392.1	LN:971
+skipping SAM header line:	@SQ	SN:KI270393.1	LN:1308
+skipping SAM header line:	@SQ	SN:KI270394.1	LN:970
+skipping SAM header line:	@SQ	SN:KI270395.1	LN:1143
+skipping SAM header line:	@SQ	SN:KI270396.1	LN:1880
+skipping SAM header line:	@SQ	SN:KI270411.1	LN:2646
+skipping SAM header line:	@SQ	SN:KI270412.1	LN:1179
+skipping SAM header line:	@SQ	SN:KI270414.1	LN:2489
+skipping SAM header line:	@SQ	SN:KI270417.1	LN:2043
+skipping SAM header line:	@SQ	SN:KI270418.1	LN:2145
+skipping SAM header line:	@SQ	SN:KI270419.1	LN:1029
+skipping SAM header line:	@SQ	SN:KI270420.1	LN:2321
+skipping SAM header line:	@SQ	SN:KI270422.1	LN:1445
+skipping SAM header line:	@SQ	SN:KI270423.1	LN:981
+skipping SAM header line:	@SQ	SN:KI270424.1	LN:2140
+skipping SAM header line:	@SQ	SN:KI270425.1	LN:1884
+skipping SAM header line:	@SQ	SN:KI270429.1	LN:1361
+skipping SAM header line:	@SQ	SN:KI270435.1	LN:92983
+skipping SAM header line:	@SQ	SN:KI270438.1	LN:112505
+skipping SAM header line:	@SQ	SN:KI270442.1	LN:392061
+skipping SAM header line:	@SQ	SN:KI270448.1	LN:7992
+skipping SAM header line:	@SQ	SN:KI270465.1	LN:1774
+skipping SAM header line:	@SQ	SN:KI270466.1	LN:1233
+skipping SAM header line:	@SQ	SN:KI270467.1	LN:3920
+skipping SAM header line:	@SQ	SN:KI270468.1	LN:4055
+skipping SAM header line:	@SQ	SN:KI270507.1	LN:5353
+skipping SAM header line:	@SQ	SN:KI270508.1	LN:1951
+skipping SAM header line:	@SQ	SN:KI270509.1	LN:2318
+skipping SAM header line:	@SQ	SN:KI270510.1	LN:2415
+skipping SAM header line:	@SQ	SN:KI270511.1	LN:8127
+skipping SAM header line:	@SQ	SN:KI270512.1	LN:22689
+skipping SAM header line:	@SQ	SN:KI270515.1	LN:6361
+skipping SAM header line:	@SQ	SN:KI270516.1	LN:1300
+skipping SAM header line:	@SQ	SN:KI270517.1	LN:3253
+skipping SAM header line:	@SQ	SN:KI270518.1	LN:2186
+skipping SAM header line:	@SQ	SN:KI270519.1	LN:138126
+skipping SAM header line:	@SQ	SN:KI270521.1	LN:7642
+skipping SAM header line:	@SQ	SN:KI270522.1	LN:5674
+skipping SAM header line:	@SQ	SN:KI270528.1	LN:2983
+skipping SAM header line:	@SQ	SN:KI270529.1	LN:1899
+skipping SAM header line:	@SQ	SN:KI270530.1	LN:2168
+skipping SAM header line:	@SQ	SN:KI270538.1	LN:91309
+skipping SAM header line:	@SQ	SN:KI270539.1	LN:993
+skipping SAM header line:	@SQ	SN:KI270544.1	LN:1202
+skipping SAM header line:	@SQ	SN:KI270548.1	LN:1599
+skipping SAM header line:	@SQ	SN:KI270579.1	LN:31033
+skipping SAM header line:	@SQ	SN:KI270580.1	LN:1553
+skipping SAM header line:	@SQ	SN:KI270581.1	LN:7046
+skipping SAM header line:	@SQ	SN:KI270582.1	LN:6504
+skipping SAM header line:	@SQ	SN:KI270583.1	LN:1400
+skipping SAM header line:	@SQ	SN:KI270584.1	LN:4513
+skipping SAM header line:	@SQ	SN:KI270587.1	LN:2969
+skipping SAM header line:	@SQ	SN:KI270588.1	LN:6158
+skipping SAM header line:	@SQ	SN:KI270589.1	LN:44474
+skipping SAM header line:	@SQ	SN:KI270590.1	LN:4685
+skipping SAM header line:	@SQ	SN:KI270591.1	LN:5796
+skipping SAM header line:	@SQ	SN:KI270593.1	LN:3041
+skipping SAM header line:	@SQ	SN:KI270706.1	LN:175055
+skipping SAM header line:	@SQ	SN:KI270707.1	LN:32032
+skipping SAM header line:	@SQ	SN:KI270708.1	LN:127682
+skipping SAM header line:	@SQ	SN:KI270709.1	LN:66860
+skipping SAM header line:	@SQ	SN:KI270710.1	LN:40176
+skipping SAM header line:	@SQ	SN:KI270711.1	LN:42210
+skipping SAM header line:	@SQ	SN:KI270712.1	LN:176043
+skipping SAM header line:	@SQ	SN:KI270713.1	LN:40745
+skipping SAM header line:	@SQ	SN:KI270714.1	LN:41717
+skipping SAM header line:	@SQ	SN:KI270715.1	LN:161471
+skipping SAM header line:	@SQ	SN:KI270716.1	LN:153799
+skipping SAM header line:	@SQ	SN:KI270717.1	LN:40062
+skipping SAM header line:	@SQ	SN:KI270718.1	LN:38054
+skipping SAM header line:	@SQ	SN:KI270719.1	LN:176845
+skipping SAM header line:	@SQ	SN:KI270720.1	LN:39050
+skipping SAM header line:	@SQ	SN:KI270721.1	LN:100316
+skipping SAM header line:	@SQ	SN:KI270722.1	LN:194050
+skipping SAM header line:	@SQ	SN:KI270723.1	LN:38115
+skipping SAM header line:	@SQ	SN:KI270724.1	LN:39555
+skipping SAM header line:	@SQ	SN:KI270725.1	LN:172810
+skipping SAM header line:	@SQ	SN:KI270726.1	LN:43739
+skipping SAM header line:	@SQ	SN:KI270727.1	LN:448248
+skipping SAM header line:	@SQ	SN:KI270728.1	LN:1872759
+skipping SAM header line:	@SQ	SN:KI270729.1	LN:280839
+skipping SAM header line:	@SQ	SN:KI270730.1	LN:112551
+skipping SAM header line:	@SQ	SN:KI270731.1	LN:150754
+skipping SAM header line:	@SQ	SN:KI270732.1	LN:41543
+skipping SAM header line:	@SQ	SN:KI270733.1	LN:179772
+skipping SAM header line:	@SQ	SN:KI270734.1	LN:165050
+skipping SAM header line:	@SQ	SN:KI270735.1	LN:42811
+skipping SAM header line:	@SQ	SN:KI270736.1	LN:181920
+skipping SAM header line:	@SQ	SN:KI270737.1	LN:103838
+skipping SAM header line:	@SQ	SN:KI270738.1	LN:99375
+skipping SAM header line:	@SQ	SN:KI270739.1	LN:73985
+skipping SAM header line:	@SQ	SN:KI270740.1	LN:37240
+skipping SAM header line:	@SQ	SN:KI270741.1	LN:157432
+skipping SAM header line:	@SQ	SN:KI270742.1	LN:186739
+skipping SAM header line:	@SQ	SN:KI270743.1	LN:210658
+skipping SAM header line:	@SQ	SN:KI270744.1	LN:168472
+skipping SAM header line:	@SQ	SN:KI270745.1	LN:41891
+skipping SAM header line:	@SQ	SN:KI270746.1	LN:66486
+skipping SAM header line:	@SQ	SN:KI270747.1	LN:198735
+skipping SAM header line:	@SQ	SN:KI270748.1	LN:93321
+skipping SAM header line:	@SQ	SN:KI270749.1	LN:158759
+skipping SAM header line:	@SQ	SN:KI270750.1	LN:148850
+skipping SAM header line:	@SQ	SN:KI270751.1	LN:150742
+skipping SAM header line:	@SQ	SN:KI270752.1	LN:27745
+skipping SAM header line:	@SQ	SN:KI270753.1	LN:62944
+skipping SAM header line:	@SQ	SN:KI270754.1	LN:40191
+skipping SAM header line:	@SQ	SN:KI270755.1	LN:36723
+skipping SAM header line:	@SQ	SN:KI270756.1	LN:79590
+skipping SAM header line:	@SQ	SN:KI270757.1	LN:71251
+skipping SAM header line:	@PG	ID:Bismark	VN:v0.22.3	CL:"bismark --bowtie2 /rpcc/bioinformatics/reference/GRCh38_bismark/ -1 ../output/trim/RS-03684234/RS-03684234_7-Sarcoma-RS-03159937-SS_RS-03672207_S7_L001_R1_001_val_1.fq_trimmed.fq.gz -2 ../output/trim/RS-03684234/RS-03684234_7-Sarcoma-RS-03159937-SS_RS-03672207_S7_L001_R3_001_val_2.fq_trimmed.fq.gz -o ../output/bismark/RS-03684234 --sam"
+Processed lines: 500000
+Processed lines: 1000000
+Processed lines: 1500000
+Processed lines: 2000000
+Processed lines: 2500000
+Processed lines: 3000000
+Processed lines: 3500000
+Processed lines: 4000000
+Processed lines: 4500000
+Processed lines: 5000000
+Processed lines: 5500000
+Processed lines: 6000000
+Processed lines: 6500000
+Processed lines: 7000000
+Processed lines: 7500000
+Processed lines: 8000000
+Processed lines: 8500000
+Processed lines: 9000000
+Processed lines: 9500000
+Processed lines: 10000000
+Processed lines: 10500000
+Processed lines: 11000000
+Processed lines: 11500000
+Processed lines: 12000000
+Processed lines: 12500000
+Processed lines: 13000000
+Processed lines: 13500000
+Processed lines: 14000000
+Processed lines: 14500000
+Processed lines: 15000000
+Processed lines: 15500000
+Processed lines: 16000000
+Processed lines: 16500000
+Processed lines: 17000000
+Processed lines: 17500000
+Processed lines: 18000000
+Processed lines: 18500000
+Processed lines: 19000000
+Processed lines: 19500000
+Processed lines: 20000000
+Processed lines: 20500000
+Processed lines: 21000000
+Processed lines: 21500000
+Processed lines: 22000000
+Processed lines: 22500000
+Processed lines: 23000000
+
+Processed 23004707 lines in total
+Total number of methylation call strings processed: 46009414
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	697630333
+
+Total methylated C's in CpG context:	55858835
+Total methylated C's in CHG context:	995165
+Total methylated C's in CHH context:	1426822
+
+Total C to T conversions in CpG context:	56534329
+Total C to T conversions in CHG context:	184977803
+Total C to T conversions in CHH context:	397837379
+
+C methylated in CpG context:	49.7%
+C methylated in CHG context:	0.5%
+C methylated in CHH context:	0.4%
+
+
+Determining maximum read lengths for M-Bias plots
+Maximum read length of Read 1: 95
+Maximum read length of Read 2: 93
+
+Perl module GD::Graph::lines is not installed, skipping drawing M-bias plots (only writing out M-bias plot table)
+Determining maximum read lengths for M-Bias plots
+Maximum read length of Read 1: 95
+Maximum read length of Read 2: 93
+
+Perl module GD::Graph::lines is not installed, skipping drawing M-bias plots (only writing out M-bias plot table)
+Deleting unused files ...
+
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt contains data ->	kept
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_CTOT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt was empty ->	deleted
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_CTOB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt was empty ->	deleted
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt contains data ->	kept
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt contains data ->	kept
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_CTOT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt was empty ->	deleted
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_CTOB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt was empty ->	deleted
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt contains data ->	kept
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt contains data ->	kept
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_CTOT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt was empty ->	deleted
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_CTOB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt was empty ->	deleted
+/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt contains data ->	kept
+
+
+Using these input files: /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/CHH_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+
+Summary of parameters for bismark2bedGraph conversion:
+======================================================
+bedGraph output:		RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.bedGraph.gz
+output directory:		>/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/<
+remove whitespaces:		no
+CX context:			no (CpG context only, default)
+No-header selected:		no
+Sorting method:			Unix sort-based (smaller memory footprint, but slower)
+Sort buffer size:		2G
+Coverage threshold:		1
+=============================================================================
+Methylation information will now be written into a bedGraph and coverage file
+=============================================================================
+
+Using the following files as Input:
+Writing bedGraph to file: RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.bedGraph.gz
+Also writing out a coverage file including counts methylated and unmethylated residues to file: RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.bismark.cov.gz
+
+Changed directory to /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-joyceohm/rrbs_methyl_extract/methyl_extract_RS-03684234/
+Now writing methylation information for file >>CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt<< to individual files for each chromosome
+Finished writing out individual chromosome files for CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+Now writing methylation information for file >>CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt<< to individual files for each chromosome
+Finished writing out individual chromosome files for CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt
+
+Collecting temporary chromosome file information... Processing the following input file(s):
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr7.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr11.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr12.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr10.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr19.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr2.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr4.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr3.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr5.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr22.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr14.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr8.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr20.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchrX.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr15.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270744.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr13.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr17.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr16.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr9.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr6.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr18.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000225.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270442.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr21.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270733.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000205.2.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000219.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000008.2.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchrM.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270728.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270754.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270724.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchrY.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000224.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000214.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270727.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000220.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000194.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270714.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270725.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000216.2.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270708.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270712.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270723.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270438.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270734.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270717.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270743.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270731.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270706.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270742.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270721.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270736.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270750.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000195.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270713.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270519.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270745.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270732.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270709.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000218.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270719.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270707.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000009.2.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270755.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270735.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270722.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270738.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270753.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270726.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270746.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270749.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270538.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000208.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270729.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270710.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270730.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270539.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270751.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270711.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270748.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000221.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270747.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000213.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270718.1.methXtractor.temp
+CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270741.1.methXtractor.temp
+CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270720.1.methXtractor.temp
+CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270522.1.methXtractor.temp
+
+Sorting input file CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270522.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270522.1.methXtractor.temp
+
+Sorting input file CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270720.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OB_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270720.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000008.2.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000008.2.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000009.2.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000009.2.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000194.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000194.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000195.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000195.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000205.2.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000205.2.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000208.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000208.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000213.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000213.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000214.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000214.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000216.2.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000216.2.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000218.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000218.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000219.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000219.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000220.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000220.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000221.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000221.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000224.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000224.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000225.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrGL000225.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270438.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270438.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270442.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270442.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270519.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270519.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270538.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270538.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270539.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270539.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270706.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270706.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270707.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270707.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270708.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270708.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270709.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270709.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270710.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270710.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270711.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270711.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270712.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270712.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270713.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270713.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270714.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270714.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270717.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270717.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270718.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270718.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270719.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270719.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270721.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270721.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270722.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270722.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270723.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270723.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270724.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270724.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270725.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270725.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270726.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270726.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270727.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270727.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270728.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270728.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270729.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270729.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270730.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270730.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270731.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270731.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270732.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270732.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270733.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270733.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270734.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270734.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270735.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270735.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270736.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270736.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270738.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270738.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270741.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270741.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270742.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270742.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270743.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270743.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270744.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270744.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270745.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270745.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270746.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270746.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270747.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270747.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270748.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270748.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270749.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270749.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270750.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270750.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270751.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270751.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270753.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270753.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270754.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270754.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270755.1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrKI270755.1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr1.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr10.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr10.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr11.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr11.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr12.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr12.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr13.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr13.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr14.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr14.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr15.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr15.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr16.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr16.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr17.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr17.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr18.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr18.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr19.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr19.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr2.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr2.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr20.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr20.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr21.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr21.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr22.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr22.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr3.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr3.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr4.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr4.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr5.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr5.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr6.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr6.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr7.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr7.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr8.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr8.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr9.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchr9.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchrM.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchrM.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchrX.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchrX.methXtractor.temp
+
+Sorting input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchrY.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_RS-03684234_001_val_1.fq_trimmed_bismark_bt2_pe.txt.chrchrY.methXtractor.temp
+
+Finished BedGraph conversion ...
+
