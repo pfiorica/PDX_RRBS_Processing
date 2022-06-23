@@ -1,0 +1,62 @@
+ The MKL Libraries are in your library path. This is adequate for compiling and
+running most codes. Source $MKL/bin/mklvars.sh" for more features. 
+ ********************************************* 
+ WARNING! Rmpi is NOT yet available in R 3.5.1.
+ ********************************************* 
+Warning message:
+package ‘data.table’ was built under R version 3.5.2 
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:data.table’:
+
+    between, first, last
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 3.5.2 
+Warning message:
+package ‘ggplot2’ was built under R version 3.5.2 
+Warning message:
+package ‘stringr’ was built under R version 3.5.2 
+Loading required package: lattice
+Error:
+! object 'V3.x' not found
+Backtrace:
+     ▆
+  1. ├─... %>% filter(is.na(methylation_change) == FALSE)
+  2. ├─dplyr::filter(., is.na(methylation_change) == FALSE)
+  3. ├─dplyr::filter(., CHR %in% chr_list)
+  4. ├─dplyr::mutate(., CHR = gsub("chr", "", CHR))
+  5. ├─dplyr::rename(., CHR = V1.x, BP = as.numeric(V3.x))
+  6. ├─dplyr:::rename.data.frame(., CHR = V1.x, BP = as.numeric(V3.x))
+  7. │ └─tidyselect::eval_rename(expr(c(...)), .data)
+  8. │   └─tidyselect:::rename_impl(...)
+  9. │     └─tidyselect:::eval_select_impl(...)
+ 10. │       ├─tidyselect:::with_subscript_errors(...)
+ 11. │       │ ├─base::tryCatch(...)
+ 12. │       │ │ └─base tryCatchList(expr, classes, parentenv, handlers)
+ 13. │       │ │   └─base tryCatchOne(expr, names, parentenv, handlers[[1L]])
+ 14. │       │ │     └─base doTryCatch(return(expr), name, parentenv, handler)
+ 15. │       │ └─tidyselect:::with_entraced_errors(expr)
+ 16. │       │   └─rlang::try_fetch(...)
+ 17. │       │     └─base::withCallingHandlers(...)
+ 18. │       └─tidyselect:::vars_select_eval(...)
+ 19. │         └─tidyselect:::walk_data_tree(expr, data_mask, context_mask, error_call)
+ 20. │           └─tidyselect:::eval_c(expr, data_mask, context_mask)
+ 21. │             └─tidyselect:::reduce_sels(node, data_mask, context_mask, init = init)
+ 22. │               └─tidyselect:::walk_data_tree(new, data_mask, context_mask)
+ 23. │                 └─tidyselect:::eval_context(expr, context_mask)
+ 24. │                   └─rlang::eval_tidy(expr, context_mask)
+ 25. └─base::.handleSimpleError(...)
+ 26.   └─rlang h(simpleError(msg, call))
+ 27.     └─handlers[[1L]](cnd)
+ 28.       └─rlang::abort(conditionMessage(cnd), call = conditionCall(cnd))
+Execution halted

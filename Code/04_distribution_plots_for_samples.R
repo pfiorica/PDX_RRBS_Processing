@@ -21,7 +21,7 @@ for(sample in samples){
   filterd_cov_file <- coverage_file %>%
     filter(total_reads > 1) %>%
     mutate(sample_id = sample)
-  print("For sample: " %&% sample %&% ", " %&% (nrow(coverage_file)-nrow(filterd_cov_file)) %&% " loci were removed because they contained than one read at the locus.")
+  print("For sample: " %&% sample %&% ", " %&% (nrow(coverage_file)-nrow(filterd_cov_file)) %&% " loci were removed because they contained less than one read at the locus.")
   a<-bind_rows(a,filterd_cov_file)
   pdf(outfile %&% sample %&%"_locus_meth_distribution.pdf", height = 7.50, width = 9.00)
   print( ggplot(filterd_cov_file, aes(x=V4))+ geom_histogram()+ xlab("% Methylation")+    ggtitle(paste0(sample, " Distribution of % Methylation by Locus")) +theme_bw())
