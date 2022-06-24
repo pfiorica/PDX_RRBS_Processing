@@ -78,7 +78,7 @@ for (i in 1:nrow(total_key)){
     #      plot.margin=unit(c(1,1,0.1,1), units ="cm")
     #)+
   #plot_list<-c(plot_list,plotA)
-  png(outpath %&% source_ID %&%"_comparison_of_global_methylation_change.pdf", height = 750, width = 650, units = "px")
+  png(outpath %&% source_ID %&%"_comparison_of_global_methylation_change.png", height = 750, width = 650, units = "px")
   print(plotA)
   dev.off()
 }
